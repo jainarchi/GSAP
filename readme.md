@@ -1,9 +1,9 @@
-GSAP - JS Library   
+# GSAP - JS Library   
 used to make moving animation   
 css with extra feature with less code 
 
 
-SEQUENCE :  
+# SEQUENCE :  
 gsap    
 scrollTriger    
 script
@@ -23,7 +23,7 @@ need - make sequence animation without complex calculation
 
 delay
 duration   
-stagger 
+stagger  (eg : between h1)
 
 scroll Tigger : start based on scrolling    
 markers     
@@ -34,3 +34,7 @@ pin : element stick
 NOTE : always trigger parent element whenever use pin
 
 attr : {attributName = "value" }
+
+# svg animation     
+MDN Mozilla - for curve svg      
+gsap easing - for manage speed
