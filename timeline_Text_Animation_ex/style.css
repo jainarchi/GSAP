@@ -1,87 +1,118 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-html , body{
-    height: 100%;
-    width: 100%;
-    font-family: system-ui;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: system-ui;
 }
 
-nav{
-    background: #000000;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 1rem;
+span , i {
+  display: inline-block;
 }
 
-nav h2{
-    font-weight: 500;
+nav {
+  background: #000000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  z-index: 9;
 }
 
-main{
-    background-color: #222;
-    color: white;
+nav h2 {
+  font-weight: 500;
 }
 
-#page1 , #page2 {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main {
+  background-color: #222;
+  color: white;
 }
 
-#page1 h1{
-    font-weight: 500;
-    font-size: 4rem;
-    overflow: hidden;
-    padding: 1rem;
-    letter-spacing: 2px;
-    font-weight: 400;
-
+#page1,
+#page2 {
+  height: 100vh;
+  width: 100%;
+}
+#page1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-span{
-    display: inline-block;
+#page1 h1 {
+  font-weight: 500;
+  font-size: 4rem;
+  overflow: hidden;
+  padding: 1rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.sidebar {
+  height: 100%;
+  width: 30vw;
+  background: #d8d7d768;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-left: 2rem;
+  backdrop-filter: blur(20px);
+}
+
+.sidebar h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.sidebar #close {
+  align-self: flex-end;
+  margin: 1rem;
+  cursor: pointer;
+  rotate: 45deg;
+  font-size: 2rem;
+}
+
+#menu {
+  cursor: pointer;
+}
+
+#page2 {
+  background: #0c0d0d;
+}
+
+#page2 #parentCont {
+  background: yellow;
+  width: 100%;
+  padding: 1vw;
+}
+
+#page2 #textCont {
+  background: yellow;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: black;
+  overflow-x: hidden;
 }
 
 
-.sidebar{
-    height: 100%;
-    width: 30vw;
-    background: #d8d7d768;
-    position: fixed;
-    top: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding-left: 2rem;
-    backdrop-filter: blur(20px);
-    
-}
-
-.sidebar h3{
-    font-size: 1.6rem;
-    font-weight: 400;
-}
-
-.sidebar #close{
-    align-self: flex-end;
-    margin: 1rem ;
-    cursor: pointer;
-    rotate: 45deg;
-    font-size: 2rem;
-}
-
-#menu{
-    cursor: pointer;
+#page2 h2 {
+  flex-shrink: 0;
+  transform: translateX(-100%);
+  font-size: 3rem;
+  font-weight:500 ;
 }

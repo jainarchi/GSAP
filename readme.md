@@ -18,8 +18,10 @@ Some Properties -
 repeat : -1    inifinte  
 yoyo : true    bounce back   
 
-Gsap timeline:  
+
 need - make sequence animation without complex calculation
+Gsap timeline
+
 
 delay
 duration   
