@@ -69,6 +69,7 @@ main {
   gap: 1.5rem;
   padding-left: 2rem;
   backdrop-filter: blur(20px);
+  z-index : 99 ;
 }
 
 .sidebar h3 {
