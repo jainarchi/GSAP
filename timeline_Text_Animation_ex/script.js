@@ -91,7 +91,7 @@ window.addEventListener("wheel", (dets) => {
       ease: "none",
     });
   }
-  else if(dir <= 0){
+  else if(dir < 0){
      gsap.to("#textCont h2", {
       transform : 'translateX(100%)' ,
       duration: 5,
