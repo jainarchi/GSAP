@@ -4,12 +4,26 @@
     box-sizing: border-box;
 }
 body{
-    background: #222;
+    background: #111;
+}
+
+.Cont{
+    position: relative;
+    overflow: hidden;
 }
 
 #string{
     height: 200px;
     width: 100%;
-    background: #fab5b5;
+    /* background: #fab5b5; */
 }
 
+.ball{
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 0;
+    background: #7af500;
+    border-radius: 50%;
+    box-shadow: 0px 10px 3rem rgb(220, 255, 197);
+}

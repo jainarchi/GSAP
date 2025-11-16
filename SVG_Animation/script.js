@@ -13,13 +13,20 @@ string.addEventListener("mousemove", function (dets) {
   
   gsap.to("svg path", {
     attr: { d: path },
-    duration : 0.2 ,
+    duration : 0.8 ,
     ease : "power3.out"
-    
    
   });
 
+    gsap.to(".ball" , {
+    x : dets.x ,
+    y : dets.y ,
+    xPercent : -50,
+    yPercent : -50,
+    duration : 0.4,
   
+  })
+     
 
 });
 
@@ -28,11 +35,11 @@ string.addEventListener("mouseleave" , function(){
     
     gsap.to("svg path" , {
         attr : {d : finalPath},
-        duration : 8 ,
+        duration : 2 ,
         ease: "elastic.out(1,0.2)",
 
-
     })
+
 })
 
 

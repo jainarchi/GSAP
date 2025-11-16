@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html , body {
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background: #242323;
+    overflow: hidden;
+}
+
+.cursor{
+    height: 120px;
+    width: 120px;
+    background: linear-gradient(red , rgb(220, 218, 218) , rgb(21, 255, 0));
+    position: absolute;
+    border-radius: 50% ;
+}
+
