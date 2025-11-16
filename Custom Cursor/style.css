@@ -7,6 +7,7 @@
 html , body {
     height: 100%;
     width: 100%;
+    font-family: system-ui;
 }
 
 #main{
@@ -14,13 +15,44 @@ html , body {
     width: 100%;
     background: #242323;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgCont{
+    height: 50vh;
+    width: 95vh;
+    position: relative;
+
+}
+
+#imgCont img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .cursor{
-    height: 120px;
-    width: 120px;
-    background: linear-gradient(red , rgb(220, 218, 218) , rgb(21, 255, 0));
-    position: absolute;
+    height: 20px;
+    width: 20px;
+    background : white ;
+    position: fixed;
     border-radius: 50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 4.5px;
+    z-index: 9;
+    
 }
 
+.overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: transparent;
+    z-index: 99;
+}

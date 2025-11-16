@@ -1,21 +1,30 @@
-
-
 let cursor = document.querySelector(".cursor")
-let div = document.querySelector("#main")
+let main = document.querySelector("#main")
+let imgCont = document.querySelector("#imgCont")
 
 
 
-div.addEventListener("mousemove" , (dets) => {
-    
-
-    gsap.to(".cursor" , {
-        x : dets.x ,
-        y : dets.y,
-        xPercent : -50 ,
-        yPercent : -50 ,
-        duration : 2,
-        ease : "power2.out"
+main.addEventListener("mousemove" , (dets) =>{
+    gsap.to(cursor, {
+    x : dets.x , 
+    y : dets.y, 
+    xPercent : -50,
+    yPercent : -50 ,
+    duration : 1
     })
-    
 })
 
+imgCont.addEventListener("mouseenter" , (dets) =>{
+    cursor.textContent = "View More"
+    
+    gsap.to( cursor , {
+        scale : 3
+    })
+})
+
+imgCont.addEventListener("mouseleave" , () => {
+    cursor.textContent = ""
+     gsap.to(cursor , {
+         scale : 1 
+     })
+})

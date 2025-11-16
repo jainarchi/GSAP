@@ -1,6 +1,6 @@
 # GSAP - JS Library   
 used to make moving animation   
-css with extra feature with less code 
+css with extra feature and less code 
 
 
 # SEQUENCE :  
@@ -8,7 +8,7 @@ gsap
 scrollTriger    
 script
 
-
+# Animation Method
 gsap.to  -  initial to final    
 gsap.form - final from initial
 
@@ -36,5 +36,10 @@ NOTE : always trigger parent element whenever use pin
 attr : {attributName = "value" }
 
 # svg animation     
-MDN Mozilla - for curve svg      
-gsap easing - for manage speed
+- Refer MDN (Mozilla Developer Network) documentation for creating complex curve paths in SVG.
+
+- use GSAP Easing to manage the speed (acceleration/deceleration) of the animation.
+
+
+# Custom Cursor
+glitch problem - overlay
