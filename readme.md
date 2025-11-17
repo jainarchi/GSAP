@@ -20,8 +20,7 @@ yoyo : true    bounce back
 
 
 need - make sequence animation without complex calculation
-Gsap timeline
-
+Gsap timeline 
 
 delay
 duration   
